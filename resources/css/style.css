@@ -8,10 +8,10 @@ body {
   margin: 0 auto;
 }
 
-.container {
+/*.container {
   display: flex;
   margin: auto;
-}
+}*/
 
 /* Header */
 
@@ -57,26 +57,28 @@ ul li {
 }
 
 
-/* Banner */
-.banner-box {
-  background-color: rgb(220, 220, 220);
-  display: flex;
-  justify-content: space-between;
-  height: 600px;
-  align-items: center;
-}
-
-.banner-box img {
-  display: flex;
-  width: 60%;
-  padding: 2rem 1.5rem;
-
-}
-
-.banner-right {
+.left-box {
   display: flex;
   flex-direction: column;
-  font-family: "Raleway", "Helvetica", sans-serif;
+  width: 60%;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  background-color: rgb(220, 220, 220);
+}
+
+.banner .left-box img {
+  padding: 2rem 1.5rem;
+  height: 500px;
 }
 
 .banner-text {
@@ -85,6 +87,8 @@ ul li {
   flex-direction: column;
   justify-content: center;
   color: rgb(105, 105, 105);
+  flex-direction: column;
+  font-family: "Raleway", "Helvetica", sans-serif;
 }
 
 .button {
