@@ -13,6 +13,7 @@ body {
   margin: auto;
 }*/
 
+
 h1 {
   font-weight: 800;
   padding-bottom: 1.5rem;
@@ -65,15 +66,15 @@ ul li {
 .left-box {
   display: flex;
   flex-direction: column;
-  width: 60%;
   padding-left: 1.5rem;
+  width: 60%;
 }
 
 .right-box {
   display: flex;
   flex-direction: column;
-  width: 40%;
   justify-content: center;
+  width: 40%;
 }
 
 /* Banner */
@@ -94,7 +95,6 @@ ul li {
   flex-direction: column;
   justify-content: center;
   color: rgb(105, 105, 105);
-  flex-direction: column;
   font-family: "Raleway", "Helvetica", sans-serif;
 }
 
@@ -113,6 +113,9 @@ ul li {
 }
 
 /* Info box */
+.information {
+  display: flex;
+}
 .information .left-box img{
   padding: 2rem 1.5rem;
   height: 25rem;
@@ -129,4 +132,40 @@ ul li {
 
 .quote span {
   font-weight: 700;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: solid gray 1px;
+}
+.info-box img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+.info-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(105, 105, 105);
+  padding-left: 1.5rem;
+  width: 65%;
+  font-family: "Raleway", "Helvetica", sans-serif;
+
+}
+
+
+.info-box-text a {
+  color: rgb(30,144,255);
+  text-decoration: none;
+}
+
+.info-box-text h2 {
+  font-weight: 700;
+}
+.more-info {
+  display: flex;
+  flex-direction: column;
 }
