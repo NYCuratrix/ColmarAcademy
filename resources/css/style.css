@@ -13,6 +13,11 @@ body {
   margin: auto;
 }*/
 
+h1 {
+  font-weight: 800;
+  padding-bottom: 1.5rem;
+}
+
 /* Header */
 
 header img{
@@ -61,6 +66,7 @@ ul li {
   display: flex;
   flex-direction: column;
   width: 60%;
+  padding-left: 1.5rem;
 }
 
 .right-box {
@@ -78,11 +84,12 @@ ul li {
 
 .banner .left-box img {
   padding: 2rem 1.5rem;
-  height: 500px;
+  height: 32rem;
 }
 
 .banner-text {
   width: 60%;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,12 +98,35 @@ ul li {
   font-family: "Raleway", "Helvetica", sans-serif;
 }
 
+.banner-text h3 {
+  font-weight: 400;
+}
 .button {
   width: 60%;
   background-color: rgb(105, 105, 105);
   color: white;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  margin-left: 1.5rem;
   text-align: center;
   border-radius: 25px;
+}
+
+/* Info box */
+.information .left-box img{
+  padding: 2rem 1.5rem;
+  height: 25rem;
+}
+.quote {
+  padding-left: 1.5rem;
+  font-family: "Raleway", "Helvetica", sans-serif;
+  color: rgb(105, 105, 105);
+}
+.quote p {
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+}
+
+.quote span {
+  font-weight: 700;
 }
