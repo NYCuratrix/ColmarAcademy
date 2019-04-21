@@ -121,7 +121,7 @@ ul li {
   display: flex;
 }
 .information .left-box img{
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 1rem 1.5rem;
   height: 25rem;
 }
 .quote {
@@ -131,7 +131,7 @@ ul li {
 }
 .quote p {
   font-weight: 400;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .quote span {
