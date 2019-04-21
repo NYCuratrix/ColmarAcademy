@@ -1,5 +1,5 @@
 html{
-  font-family: Helvetica;
+  font-family: "Raleway"; "Helvetica", sans-serif;
   font-size: 16px;
 }
 
@@ -144,6 +144,7 @@ ul li {
   justify-content: flex-start;
   border-bottom: solid gray 1px;
   margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 .info-box img {
   width: 35%;
@@ -178,7 +179,7 @@ ul li {
   display: inline-block;
   background-color: rgb(220, 220, 220);
   text-align: center;
-
+  color: rgb(105, 105, 105);
 }
 .course-box h1{
   padding-top: 2rem;
@@ -201,9 +202,26 @@ ul li {
 }
 
 .course-text {
-  padding: 1rem;
+  padding-left: 1rem;
   text-align: left;
+}
+
+.course-text #course-title {
+  padding: 0.5rem 0;
+}
+
+.course-text #classes {
+  font-weight: 300;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .course img {
   width: 300px;
+}
+
+
+footer p {
+  display: inline;
+  padding: 0 1rem;
+  color: rgb(105, 105, 105);
 }
