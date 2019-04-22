@@ -1,0 +1,98 @@
+html{
+  font-family: "Raleway"; "Helvetica", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.4;
+  max-width: 1600px;
+}
+
+h1 {
+  font-weight:800;
+}
+.container {
+  display: flex;
+}
+
+
+/* Header */
+header {
+  margin: 0 2rem;
+}
+header img{
+  padding-right: .2rem;
+  height: 3rem;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 4rem;
+  font-family: "Ubuntu"; "Helvetica", sans-serif;
+}
+nav .logo-name {
+  display: flex;
+  align-items: center;
+}
+
+header h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+header h4 .firstword {
+  color: hsl(0, 0%, 25%);
+}
+
+header h4 .secondword {
+  color: hsl(0, 0%, 45%);
+}
+
+nav ul {
+  margin-right: 1.5rem;
+}
+
+ul li {
+  display: inline;
+  padding: 0 1rem;
+  color: hsl(0, 0%, 45%);
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  background-color: hsl(0, 0%, 75%);
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 2rem 1.5rem;
+}
+
+.banner-text {
+  width: 40%;
+  padding: 2rem 1.5rem;
+  margin: auto 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(0, 0%, 35%);
+  font-family: "Raleway", "Helvetica", sans-serif;
+}
+
+.banner-text h1 {
+    color: hsl(0, 0%, 25%);
+  }
+
+}
+footer p {
+  display: inline;
+  padding: 0 1rem;
+  color: rgb(105, 105, 105);
+}
