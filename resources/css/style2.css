@@ -5,16 +5,37 @@ html{
 
 body {
   line-height: 1.4;
-  max-width: 1600px;
+  /*max-width: 1600px;*/
+  color: hsl(0, 0%, 35%);
+  margin: 0 auto;
 }
 
 h1 {
   font-weight:800;
+  color: hsl(0, 0%, 25%);
 }
 .container {
   display: flex;
+  padding: 1.5rem 1.5rem;
+
 }
 
+.wide-box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.narrow-box {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.mini-Box {
+  display: flex;
+  flex-direction: row;
+}
 
 /* Header */
 header {
@@ -69,7 +90,7 @@ ul li {
 }
 
 .banner img {
-  max-width: 100%;
+  width: auto;
   height: auto;
   overflow: hidden;
   padding: 2rem 1.5rem;
@@ -90,7 +111,46 @@ ul li {
     color: hsl(0, 0%, 25%);
   }
 
+
+/* Info Box */
+.info-box {
+  display: flex;
 }
+
+.info-box .wide-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.mini-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: solid gray 1px;
+  /*margin-top: 1rem;*/
+  padding-bottom: 1rem;
+}
+.mini-box img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+.mini-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgb(105, 105, 105);
+  padding-left: 1.5rem;
+  width: 65%;
+}
+
+.mini-box-text a {
+  color: rgb(30,144,255);
+  text-decoration: none;
+}
+
 footer p {
   display: inline;
   padding: 0 1rem;
