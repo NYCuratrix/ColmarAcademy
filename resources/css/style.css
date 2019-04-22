@@ -6,7 +6,7 @@ html{
 body {
   line-height: 1.4;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1600px;
 }
 
 .container {
@@ -85,6 +85,7 @@ ul li {
 .banner {
   display: flex;
   background-color: rgb(220, 220, 220);
+  width: 100%;
 }
 
 .banner .left-box img {
@@ -138,12 +139,17 @@ ul li {
   font-weight: 700;
 }
 
+.more-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .info-box {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   border-bottom: solid gray 1px;
-  margin-top: 1rem;
+  /*margin-top: 1rem;*/
   padding-bottom: 1rem;
 }
 .info-box img {
@@ -154,7 +160,7 @@ ul li {
 .info-box-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   color: rgb(105, 105, 105);
   padding-left: 1.5rem;
   width: 65%;
@@ -168,10 +174,6 @@ ul li {
 
 .info-box-text h2 {
   font-weight: 700;
-}
-.more-info {
-  display: flex;
-  flex-direction: column;
 }
 
 /* Course Section */
