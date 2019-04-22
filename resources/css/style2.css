@@ -34,16 +34,16 @@ h1 {
 
 .mini-box {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-bottom: solid gray 1px;
-  /*margin-top: 1rem;*/
-  padding-bottom: 1rem;
+  align-items: flex-start;
+  padding-bottom: 0.5rem;
+  margin 0 0 0.5rem 1rem;
+
 }
 .mini-box img {
   width: 35%;
   height: auto;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 .mini-box-text {
   display: flex;
@@ -147,10 +147,13 @@ ul li {
 }
 
 /*  Courses */
+.course-box h1 {
+  text-align: center;
+}
 .course-box {
   display: inline-block;
   background-color: rgb(220, 220, 220);
-  text-align: center;
+
   color: rgb(105, 105, 105);
 }
 
@@ -187,7 +190,27 @@ ul li {
   width: 300px;
 }
 
+/*Thesis Exhibit section  */
+.thesis-box {
+  display: inline-block;
+  color: rgb(105, 105, 105);
+}
 
+.thesis-box h1{
+  text-align: center;
+}
+.thesis-inner-box {
+  display: flex;
+  align-items: flex-start;
+}
+
+.thesis-box .wide-box video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
 footer p {
   display: inline;
   padding: 0 1rem;
