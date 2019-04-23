@@ -14,10 +14,10 @@ h1 {
   font-weight:800;
   color: hsl(0, 0%, 25%);
 }
+
 .container {
   display: flex;
   padding: 0.5rem 1.5rem;
-
 }
 
 .wide-box {
@@ -30,11 +30,12 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 40%;
+  padding-left: 1.5rem;
 }
 
 .mini-box {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 0.5rem;
   margin 0 0 0.5rem 1rem;
 
@@ -42,14 +43,12 @@ h1 {
 .mini-box img {
   width: 35%;
   height: auto;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 1rem;
 }
 .mini-box-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  color: rgb(105, 105, 105);
   padding-left: 1.5rem;
   width: 65%;
 }
@@ -108,7 +107,7 @@ ul li {
 /* Banner */
 .banner {
   display: flex;
-  background-color: hsl(0, 0%, 75%);
+  background-color: hsl(0, 0%, 85%);
 }
 
 .banner img {
@@ -152,7 +151,7 @@ ul li {
 }
 .course-box {
   display: inline-block;
-  background-color: rgb(220, 220, 220);
+  background-color: hsl(0, 0%, 85%);
 
   color: rgb(105, 105, 105);
 }
@@ -208,6 +207,11 @@ ul li {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.thesis-box #fisma {
+  background-color: hsl(0, 0%, 85%);
+  color: hsl(0, 0%, 35%)
 }
 
 /* Footer */
