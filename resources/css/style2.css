@@ -33,6 +33,21 @@ h1 {
   padding-left: 1.5rem;
 }
 
+/*@media only screen and (max-width: 525px) {
+  .container {
+    display: block;
+  }
+
+  .wide-box {
+    width: 100%;
+    display:block;
+  }
+  .narrow-box {
+    display: block;
+    width: 100%;
+  }
+}*/
+
 .mini-box {
   display: flex;
   align-items: center;
@@ -143,7 +158,6 @@ ul li {
   display: flex;
   background-color: hsl(0, 0%, 85%);
 }
-
 .banner img {
   max-width: 100%;
   height: auto;
@@ -177,6 +191,29 @@ ul li {
     border-radius: 25px;
   }
 
+@media only screen and (max-width: 525px) {
+    .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .banner .wide-box {
+      width: 100%;
+      height: auto;
+
+    }
+    .banner .narrow-box {
+      width: 100%;
+    }
+    .banner-text{
+      padding: 0.5rem 1rem;
+    }
+    .banner .button {
+      width: 50%;
+      margin: 0.5rem auto 2rem auto;
+    }
+  }
 /* Info Box */
 .info-box {
   display: flex;
