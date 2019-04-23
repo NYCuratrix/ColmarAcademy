@@ -151,14 +151,13 @@ ul li {
   overflow: hidden;
   padding: 2rem 1.5rem;
 }
-
+.banner .narrow-box {
+  justify-content: center;
+  align-items: flex-start;
+}
 .banner-text {
-  width: 40%;
-  padding: 2rem 1.5rem;
-  margin: auto 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   color: hsl(0, 0%, 35%);
   font-family: "Raleway", "Helvetica", sans-serif;
 }
@@ -167,6 +166,16 @@ ul li {
     color: hsl(0, 0%, 25%);
   }
 
+.button {
+    width: 60%;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    border-radius: 25px;
+  }
 
 /* Info Box */
 .info-box {
