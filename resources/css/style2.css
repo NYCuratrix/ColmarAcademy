@@ -104,6 +104,25 @@ ul li {
   color: hsl(0, 0%, 45%);
 }
 
+.mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+    header .logo-name {
+      display: none;
+    }
+    header .menu {
+      display: none;
+    }
+    header .mobile-menu {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin: 1rem 0;
+    }
+}
+
 /* Banner */
 .banner {
   display: flex;
