@@ -173,6 +173,7 @@ ul li {
   flex-direction: column;
   color: hsl(0, 0%, 35%);
   font-family: "Raleway", "Helvetica", sans-serif;
+  max-width: 35%;
 }
 
 .banner-text h1 {
