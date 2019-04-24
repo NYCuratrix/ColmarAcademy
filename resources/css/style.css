@@ -5,33 +5,83 @@ html{
 
 body {
   line-height: 1.4;
+  /*max-width: 1600px;*/
+  color: hsl(0, 0%, 35%);
   margin: 0 auto;
-  max-width: 1600px;
+}
+
+h1 {
+  font-weight:800;
+  color: hsl(0, 0%, 25%);
 }
 
 .container {
   display: flex;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-bottom: 2rem;
-
+  padding: 0.5rem 1.5rem;
 }
 
-
-h1 {
-  font-weight: 800;
-  padding-bottom: 1.5rem;
-  text-align: center;
+.wide-box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 
+.narrow-box {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 1.5rem;
+}
+
+/*@media only screen and (max-width: 525px) {
+  .container {
+    display: block;
+  }
+  .wide-box {
+    width: 100%;
+    display:block;
+  }
+  .narrow-box {
+    display: block;
+    width: 100%;
+  }
+}*/
+
+.mini-box {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  margin 0 0 0.5rem 1rem;
+
+}
+.mini-box img {
+  width: 35%;
+  height: auto;
+  padding: 1rem 1rem;
+}
+.mini-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+  width: 65%;
+}
+
+.mini-box-text a {
+  color: rgb(30,144,255);
+  text-decoration: none;
+}
 
 /* Header */
-
+header {
+  margin: 0 1.5rem;
+}
 header img{
-  padding-left: 1.5rem;
   padding-right: .2rem;
   height: 3rem;
+
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -51,11 +101,11 @@ header h4 {
 }
 
 header h4 .firstword {
-  color: rgb(105, 105, 105);
+  color: hsl(0, 0%, 25%);
 }
 
 header h4 .secondword {
-  color: rgb(169, 169, 169);
+  color: hsl(0, 0%, 45%);
 }
 
 nav ul {
@@ -65,135 +115,138 @@ nav ul {
 ul li {
   display: inline;
   padding: 0 1rem;
-  color: rgb(105, 105, 105);
+  color: hsl(0, 0%, 45%);
 }
 
-
-.left-box {
-  display: flex;
-  flex-direction: column;
-  /*padding-left: 1.5rem;*/
-  width: 60%;
+.tablet-menu {
+  display: none;
+}
+.mobile-menu {
+  display: none;
 }
 
-.right-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 40%;
+@media only screen and (max-width: 880px) {
+  header .menu {
+    display: none;
+  }
+  header .tablet-menu {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 525px) {
+    header .logo-name {
+      display: none;
+    }
+    header .tablet-menu {
+      display: none;
+    }
+
+    header .mobile-menu {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin: 1rem 0;
+    }
 }
 
 /* Banner */
 .banner {
   display: flex;
-  background-color: rgb(220, 220, 220);
-  width: 100%;
+  background-color: hsl(0, 0%, 85%);
 }
-
-.banner .left-box img {
+.banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
   padding: 2rem 1.5rem;
-  height: 32rem;
 }
-
-.banner-text {
-  /*width: 60%;*/
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
+.banner .narrow-box {
   justify-content: center;
-  color: rgb(105, 105, 105);
-  font-family: "Raleway", "Helvetica", sans-serif;
+  align-items: flex-start;
 }
-
-.banner-text h3 {
-  font-weight: 400;
-}
-.button {
-  width: 60%;
-  background-color: rgb(105, 105, 105);
-  color: white;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-left: 1.5rem;
-  text-align: center;
-  border-radius: 25px;
-}
-
-/* Info box */
-.information {
-  display: flex;
-}
-.information .left-box img{
-  padding: 2rem 1.5rem 1rem 1.5rem;
-  height: 25rem;
-}
-.quote {
-  padding-left: 1.5rem;
-  font-family: "Raleway", "Helvetica", sans-serif;
-  color: rgb(105, 105, 105);
-}
-.quote p {
-  font-weight: 400;
-  padding-bottom: 1rem;
-}
-
-.quote span {
-  font-weight: 700;
-}
-
-.more-info {
+.banner-text {
   display: flex;
   flex-direction: column;
+  color: hsl(0, 0%, 35%);
+  font-family: "Raleway", "Helvetica", sans-serif;
 }
 
+.banner-text h1 {
+    color: hsl(0, 0%, 25%);
+  }
+
+.button {
+    width: 60%;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    border-radius: 25px;
+  }
+
+@media only screen and (max-width: 525px) {
+    .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .banner .wide-box {
+      width: 100%;
+    }
+    .banner .wide-box img {
+      width: auto;
+      height: auto;
+      padding: 1rem 1rem;
+    }
+    .banner .narrow-box {
+      width: 100%;
+    }
+    .banner-text {
+      padding: 0 1.5rem 0.5rem 1rem;
+      align-items: center;
+    }
+    .banner-text h3 {
+      margin-right: 0.5rem;
+    }
+    .banner .button {
+      width: 50%;
+      align-self: center;
+      margin: 0.5rem 4rem 1rem 0;
+    }
+  }
+/* Info Box */
 .info-box {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-bottom: solid gray 1px;
-  /*margin-top: 1rem;*/
-  padding-bottom: 1rem;
 }
-.info-box img {
-  width: 35%;
+
+.info-box .wide-box img {
+  max-width: 100%;
   height: auto;
-  padding: 1rem;
-}
-.info-box-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: rgb(105, 105, 105);
-  padding-left: 1.5rem;
-  width: 65%;
-  font-family: "Raleway", "Helvetica", sans-serif;
+  display: block;
 }
 
-.info-box-text a {
-  color: rgb(30,144,255);
-  text-decoration: none;
+/*  Courses */
+.course-box h1 {
+  text-align: center;
 }
-
-.info-box-text h2 {
-  font-weight: 700;
-}
-
-/* Course Section */
 .course-box {
   display: inline-block;
-  background-color: rgb(220, 220, 220);
-  text-align: center;
+  background-color: hsl(0, 0%, 85%);
+
   color: rgb(105, 105, 105);
-}
-.course-box h1{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .course-array {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
   margin-left: 4.5rem;
   margin-right: 4.5rem;
 }
@@ -223,17 +276,32 @@ ul li {
   width: 300px;
 }
 
-/*Thesis Box*/
-.thesis h1 {
+/*Thesis Exhibit section  */
+.thesis-box {
+  display: inline-block;
+  color: rgb(105, 105, 105);
+}
+
+.thesis-box h1{
   text-align: center;
 }
-
-.thesis video {
-  height: auto;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
-  max-width: 960px;
+.thesis-inner-box {
+  display: flex;
+  align-items: flex-start;
 }
 
+.thesis-box .wide-box video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thesis-box #fisma {
+  background-color: hsl(0, 0%, 85%);
+  color: hsl(0, 0%, 35%)
+}
+
+/* Footer */
 footer p {
   display: inline;
   padding: 0 1rem;
