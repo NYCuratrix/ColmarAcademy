@@ -37,7 +37,6 @@ h1 {
   .container {
     display: block;
   }
-
   .wide-box {
     width: 100%;
     display:block;
@@ -200,18 +199,26 @@ ul li {
     }
     .banner .wide-box {
       width: 100%;
+    }
+    .banner .wide-box img {
+      width: auto;
       height: auto;
-
+      padding: 1rem 1rem;
     }
     .banner .narrow-box {
       width: 100%;
     }
-    .banner-text{
-      padding: 0.5rem 1rem;
+    .banner-text {
+      padding: 0 1.5rem 0.5rem 1rem;
+      align-items: center;
+    }
+    .banner-text h3 {
+      margin-right: 0.5rem;
     }
     .banner .button {
       width: 50%;
-      margin: 0.5rem auto 2rem auto;
+      align-self: center;
+      margin: 0.5rem 4rem 1rem 0;
     }
   }
 /* Info Box */
