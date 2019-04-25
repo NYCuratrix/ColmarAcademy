@@ -33,20 +33,6 @@ h1 {
   padding-left: 1.5rem;
 }
 
-/*@media only screen and (max-width: 525px) {
-  .container {
-    display: block;
-  }
-  .wide-box {
-    width: 100%;
-    display:block;
-  }
-  .narrow-box {
-    display: block;
-    width: 100%;
-  }
-}*/
-
 .mini-box {
   display: flex;
   align-items: center;
@@ -173,7 +159,7 @@ ul li {
   flex-direction: column;
   color: hsl(0, 0%, 35%);
   font-family: "Raleway", "Helvetica", sans-serif;
-  max-width: 35%;
+  max-width: 85%;
 }
 
 .banner-text h1 {
@@ -232,6 +218,39 @@ ul li {
   height: auto;
   display: block;
 }
+
+.info-box .narrow-box-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 525px) {
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .info-box .wide-box {
+    display: none;
+  }
+  .info-box .narrow-box-main {
+    display: none;
+  }
+  .info-box .narrow-box-main .mini-box{
+    display: none;
+  }
+
+  .info-box .narrow-box-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .info-box .narrow-box-mobile .mini-box-mobile img {
+    max-width: 100%;
+  }
+  .info-box .narrow-box-mobile .mini-box-mobile {
+    margin-bottom: 2rem;
+  }
 
 /*  Courses */
 .course-box h1 {
