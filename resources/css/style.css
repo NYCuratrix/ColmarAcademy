@@ -316,7 +316,9 @@ ul li {
     margin: 0 auto;
   }
   .course-array-mobile h2 {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     background-color: hsl(0, 0%, 85%);
     padding: 1rem 2rem 1rem 2rem;
     margin: 0.25rem auto;
