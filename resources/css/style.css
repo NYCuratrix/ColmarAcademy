@@ -251,7 +251,7 @@ ul li {
   .info-box .narrow-box-mobile .mini-box-mobile {
     margin-bottom: 2rem;
   }
-
+}
 /*  Courses */
 .course-box h1 {
   text-align: center;
@@ -263,12 +263,16 @@ ul li {
   color: rgb(105, 105, 105);
 }
 
-.course-array {
+.course-array-main {
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-left: 4.5rem;
   margin-right: 4.5rem;
+}
+
+.course-array-mobile {
+  display: none;
 }
 
 .course {
@@ -296,6 +300,30 @@ ul li {
   width: 300px;
 }
 
+@media only screen and (max-width: 525px) {
+  .course-box {
+    background-color: white;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .course-array-main {
+    display: none;
+  }
+  .course-array-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .course-array-mobile h2 {
+    display: block;
+    background-color: hsl(0, 0%, 85%);
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0.25rem auto;
+    text-align: left;
+    width: 100%;
+  }
+}
 /*Thesis Exhibit section  */
 .thesis-box {
   display: inline-block;
