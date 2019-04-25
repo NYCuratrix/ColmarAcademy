@@ -367,3 +367,7 @@ footer p {
   padding: 0 1rem;
   color: rgb(105, 105, 105);
 }
+@media only screen and (max-width: 525px) {
+  footer ul {
+    display: none;
+  }
