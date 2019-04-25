@@ -349,6 +349,18 @@ ul li {
   color: hsl(0, 0%, 35%)
 }
 
+@media only screen and (max-width: 525px) {
+  .thesis-box .wide-box {
+    width: 100%;
+  }
+  .thesis-box .wide-box h2, p {
+    display: none;
+  }
+  .thesis-box .narrow-box {
+    display: none;
+  }
+}
+
 /* Footer */
 footer p {
   display: inline;
