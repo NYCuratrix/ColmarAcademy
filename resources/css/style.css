@@ -2,13 +2,11 @@ html{
   font-family: "Raleway"; "Helvetica", sans-serif;
   font-size: 16px;
 }
-
 body {
   line-height: 1.4;
   color: hsl(0, 0%, 35%);
   margin: 0 auto;
 }
-
 @media only screen and (max-width: 525px) {
   body {
     margin: 0 0.5rem;
@@ -19,43 +17,30 @@ h2 {
   font-weight:800;
   color: hsl(0, 0%, 25%);
 }
-
 .container {
   display: flex;
   padding: 0.5rem 1.5rem;
 }
-
 .wide-box {
   width: 60%;
   display: flex;
   flex-direction: column;
 }
-
 .narrow-box {
   display: flex;
   flex-direction: column;
   width: 40%;
   padding-left: 1.5rem;
 }
-
 .mini-box {
   display: flex;
   align-items:flex-start;
   margin: 0 0 0.5rem 1rem;
-
 }
 .mini-box img {
   width: 35%;
   height: auto;
 }
-.mini-box-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-left: 1.5rem;
-  width: 65%;
-}
-
 .mini-box-text a {
   color: hsl(209,96%,54%);
   text-decoration: none;
@@ -72,9 +57,7 @@ header {
 header img{
   padding-right: .2rem;
   height: 3rem;
-
 }
-
 nav {
   display: flex;
   align-items: center;
@@ -87,40 +70,32 @@ nav .logo-name {
   display: flex;
   align-items: center;
 }
-
 header h4 {
   font-size: 2rem;
   text-transform: uppercase;
 }
-
 header h4 .firstword {
   color: hsl(0, 0%, 25%);
 }
-
 header h4 .secondword {
   color: hsl(0, 0%, 45%);
 }
-
 nav ul {
   margin-right: 1.5rem;
 }
-
 ul li {
   display: inline;
   padding: 0 1rem;
 }
-
 ul li:hover {
   color: hsl(238, 96%, 25%);
 }
-
 .tablet-menu {
   display: none;
 }
 .mobile-menu {
   display: none;
 }
-
 @media only screen and (max-width: 880px) {
   header .menu {
     display: none;
@@ -137,23 +112,24 @@ ul li:hover {
     padding: 0 0.75rem;
     margin: auto;
   }
-    header .logo-name {
+  header .logo-name {
       display: none;
-    }
-    header .tablet-menu {
+  }
+  header .tablet-menu {
       display: none;
-    }
+  }
+  header .mobile-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
+}
 
-    header .mobile-menu {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      padding-right: 2rem;
-    }
-}
-.main {
+/*.main {
   margin: 4rem auto;
-}
+}*/
+
 /* Banner */
 .banner {
   display: flex;
@@ -180,7 +156,6 @@ ul li:hover {
   max-width: 85%;
   padding-bottom: 1rem;
 }
-
 .button {
     width: 60%;
     background-color: hsl(0, 0%, 25%);
@@ -191,41 +166,42 @@ ul li:hover {
     border-radius: 25px;
     margin-bottom: 1rem;
   }
-
 .button:hover {
 background-color: hsl(238, 96%, 25%);
 }
+
 @media only screen and (max-width: 525px) {
-    .banner {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 3rem auto 1rem;
-    }
-    .banner .wide-box {
-      width: 100%;
-    }
-    .banner .wide-box img {
-      width: auto;
-      height: auto;
-      padding: 1rem 1rem;
-    }
-    .banner .narrow-box {
-      width: 100%;
-    }
-    .banner-text {
-      padding: 0 1.5rem 0.5rem 1rem;
-      align-items: center;
-    }
-    .banner-text h3 {
-      margin-right: 0.5rem;
-    }
-    .banner .button {
-      width: 50%;
-      align-self: center;
-      margin: 0.5rem 4rem 1rem 0;
-    }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem auto 1rem;
   }
+  .banner .wide-box {
+    width: 100%;
+  }
+  .banner .wide-box img {
+    width: auto;
+    height: auto;
+    padding: 1rem 1rem;
+    }
+  .banner .narrow-box {
+    width: 100%;
+  }
+  .banner-text {
+    padding: 0 1.5rem 0.5rem 1rem;
+    align-items: center;
+  }
+  .banner-text h3 {
+    margin-right: 0.5rem;
+  }
+  .banner .button {
+    width: 50%;
+    align-self: center;
+    margin: 0.5rem 4rem 1rem 0;
+  }
+}
+
 /* Info Box */
 .info-box {
   display: flex;
@@ -237,9 +213,9 @@ background-color: hsl(238, 96%, 25%);
   height: auto;
   display: block;
 }
-/*.info-box .mini-box {
-  padding-bottom: 0.25rem;
-}*/
+.info-box .mini-box-text {
+  padding-left: 1rem;
+}
 .info-box .mini-box {
   border-top: dotted 1px grey;
   border-bottom: dotted 1px grey;
@@ -263,7 +239,6 @@ background-color: hsl(238, 96%, 25%);
   .info-box .narrow-box-main .mini-box{
     display: none;
   }
-
   .info-box .narrow-box-mobile {
     display: flex;
     flex-direction: column;
@@ -275,23 +250,16 @@ background-color: hsl(238, 96%, 25%);
   }
   .info-box .narrow-box-mobile .mini-box-mobile {
     margin-bottom: 2rem;
-}
-
-    .mini-box-mobile-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      width: 100%;
-    }
-
-.mini-box-mobile-text p {
-  display: flex;
-}
-    .mini-box-mobile-text a {
-      color: hsl(209,96%,54%);
-      text-decoration: none;
-    }
   }
+  .mini-box-mobile-text p {
+    display: flex;
+  }
+  .mini-box-mobile-text a {
+    color: hsl(209,96%,54%);
+    text-decoration: none;
+  }
+}
+
 /*  Courses */
 .course-box {
   display: inline-block;
@@ -299,11 +267,9 @@ background-color: hsl(238, 96%, 25%);
   color: rgb(105, 105, 105);
   width: 100%;
 }
-
 .course-box h1 {
   text-align: center;
 }
-
 .course-array-main {
   display: inline-flex;
   flex-flow: row wrap;
@@ -311,27 +277,22 @@ background-color: hsl(238, 96%, 25%);
   margin-left: 4.5rem;
   margin-right: 4.5rem;
 }
-
 .course-array-mobile {
   display: none;
 }
-
 .course {
   background-color: white;
   margin-right: 1rem;
   margin-bottom: 2rem;
   width: 300px;
 }
-
 .course-text {
   padding-left: 1rem;
   text-align: left;
 }
-
 .course-text #course-title {
   padding: 0.5rem 0;
 }
-
 .course-text #classes {
   font-weight: 300;
   flex-direction: column;
@@ -347,7 +308,6 @@ background-color: hsl(238, 96%, 25%);
     justify-content: center;
     width: 100%;
   }
-
   .course-array-main {
     display: none;
   }
@@ -367,12 +327,12 @@ background-color: hsl(238, 96%, 25%);
     text-align: left;
   }
 }
+
 /*Thesis Exhibit section  */
 .thesis-box {
   display: inline-block;
   color: rgb(105, 105, 105);
 }
-
 .thesis-box h1{
   text-align: center;
 }
@@ -380,13 +340,11 @@ background-color: hsl(238, 96%, 25%);
   display: flex;
   align-items: flex-start;
 }
-
 .thesis-box .wide-box video {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
 .thesis-box #fisma {
   background-color: hsl(0, 0%, 85%);
   color: hsl(0, 0%, 35%)
@@ -394,7 +352,6 @@ background-color: hsl(238, 96%, 25%);
 .thesis-box img {
   padding: 1rem;
 }
-
 @media only screen and (max-width: 525px) {
   .thesis-box .wide-box {
     width: 100%;
