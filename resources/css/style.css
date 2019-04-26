@@ -126,10 +126,6 @@ ul li:hover {
   }
 }
 
-/*.main {
-  margin: 4rem auto;
-}*/
-
 /* Banner */
 .banner {
   display: flex;
@@ -189,7 +185,7 @@ background-color: hsl(238, 96%, 25%);
     width: 100%;
   }
   .banner-text {
-    padding: 0 1.5rem 0.5rem 1rem;
+    padding: 0 1.5rem 0.5rem 1.5rem;
     align-items: center;
   }
   .banner-text h3 {
