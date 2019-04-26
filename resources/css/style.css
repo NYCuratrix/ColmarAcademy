@@ -47,7 +47,6 @@ h2 {
 .mini-box img {
   width: 35%;
   height: auto;
-  padding: 0 1rem;
 }
 .mini-box-text {
   display: flex;
@@ -109,7 +108,10 @@ nav ul {
 ul li {
   display: inline;
   padding: 0 1rem;
-  /*color: hsl(0, 0%, 45%);*/
+}
+
+ul li:hover {
+  color: hsl(238, 96%, 25%);
 }
 
 .tablet-menu {
@@ -181,7 +183,7 @@ ul li {
 
 .button {
     width: 60%;
-    background-color: rgb(105, 105, 105);
+    background-color: hsl(0, 0%, 25%);
     color: white;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -190,6 +192,9 @@ ul li {
     margin-bottom: 1rem;
   }
 
+.button:hover {
+background-color: hsl(238, 96%, 25%);
+}
 @media only screen and (max-width: 525px) {
     .banner {
       display: flex;
@@ -232,7 +237,13 @@ ul li {
   height: auto;
   display: block;
 }
-
+/*.info-box .mini-box {
+  padding-bottom: 0.25rem;
+}*/
+.info-box .mini-box {
+  border-top: dotted 1px grey;
+  border-bottom: dotted 1px grey;
+}
 .info-box .narrow-box-mobile {
   display: none;
 }
@@ -381,7 +392,7 @@ ul li {
   color: hsl(0, 0%, 35%)
 }
 .thesis-box img {
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 @media only screen and (max-width: 525px) {
