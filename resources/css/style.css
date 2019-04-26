@@ -126,7 +126,7 @@ ul li {
     margin: 1rem 0;
   }
 }
-@media only screen and (max-width: 525px) {
+@media only screen and (max-width: 480px) {
     header .logo-name {
       display: none;
     }
