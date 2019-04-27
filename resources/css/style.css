@@ -39,7 +39,6 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
-  /*margin-right: 1.5rem;*/
 }
 .narrow-box {
   display: flex;
@@ -194,17 +193,15 @@ font-weight: 800;
   .banner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 3rem auto 1rem;
+    margin: 4rem auto 0.5rem auto;
   }
   .banner .wide-box {
     width: 100%;
   }
-  .banner .wide-box img {
-    width: auto;
+  .banner img {
     height: auto;
-    padding: 1rem 1rem;
-    }
+    padding-right: 4rem;
+}
   .banner .narrow-box {
     width: 100%;
   }
@@ -263,9 +260,6 @@ font-weight: 800;
 .info-box .mini-box-text p {
   padding-bottom: 1rem;
 }
-/*.info-box .mini-box-text a {
-  margin-bottom: 1rem;
-}*/
 .info-box .mini-box {
   border-top: dotted 1px rgb(89,89,89);
   border-bottom: dotted 1px rgb(89,89,89);
@@ -303,6 +297,7 @@ font-weight: 800;
   }
   .mini-box-mobile-text p {
     display: flex;
+    padding-bottom: 0.5rem;
   }
   .mini-box-mobile-text a {
     color: rgb(3, 7, 125);
@@ -314,7 +309,7 @@ font-weight: 800;
 /*  Courses */
 .course-box {
   display: inline-block;
-  background-color: hsl(0, 0%, 85%);
+  background-color: rgb(217, 217, 217);
   color: rgb(105, 105, 105);
   width: 100%;
 }
@@ -376,16 +371,18 @@ font-weight: 800;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    margin: 1rem auto;
+    width: 100
+    margin-bottom: 1rem;
   }
+
   .course-array-mobile h2 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    background-color: hsl(0, 0%, 85%);
+    background-color: rgb(217,217,217);
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-align: left;
+    margin-top: 0.5rem;
   }
 }
 
@@ -418,8 +415,8 @@ font-weight: 800;
   display: block;
 }
 .thesis-box .mini-box{
-  background-color: hsl(0, 0%, 85%);
-  color: hsl(0, 0%, 35%)
+  background-color: rgb(217, 217, 217);
+  color: rgb(89, 89, 89);
 }
 .thesis-box img {
   padding: 1rem;
@@ -433,6 +430,12 @@ font-weight: 800;
   padding-right: 1rem;
 }
 @media only screen and (max-width: 525px) {
+
+  .thesis-box h1 {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+  }
   .thesis-box .wide-box {
     width: 100%;
   }
