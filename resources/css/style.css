@@ -4,7 +4,7 @@ html{
 }
 body {
   line-height: 1.4;
-  color: hsl(0, 0%, 35%);
+  color: rgb(89, 89, 89);
   margin: 0 auto;
 }
 @media only screen and (max-width: 525px) {
@@ -15,7 +15,7 @@ body {
 h1,
 h2 {
   font-weight:800;
-  color: hsl(0, 0%, 25%);
+  color: rgb(64, 64, 64);
 }
 .container {
   display: flex;
@@ -42,10 +42,13 @@ h2 {
   height: auto;
 }
 .mini-box-text a {
-  color: hsl(209,96%,54%);
+  color: rgb(3, 7, 125);
+  font-weight: 700;
   text-decoration: none;
 }
-
+.mini-box-text a:hover {
+  font-size: 1.1rem;
+}
 /* Header */
 header {
   margin: 0 1rem 0 1rem;
@@ -75,10 +78,10 @@ header h4 {
   text-transform: uppercase;
 }
 header h4 .firstword {
-  color: hsl(0, 0%, 25%);
+  color: rgb(64, 64, 64);
 }
 header h4 .secondword {
-  color: hsl(0, 0%, 45%);
+  color: rgb(115, 115, 115);
 }
 nav ul {
   margin-right: 1.5rem;
@@ -88,7 +91,8 @@ ul li {
   padding: 0 1rem;
 }
 ul li:hover {
-  color: hsl(238, 96%, 25%);
+  color: rgb(3, 7, 125);
+  font-weight: 800;
 }
 .tablet-menu {
   display: none;
@@ -122,15 +126,15 @@ ul li:hover {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
 }
 
 /* Banner */
 .banner {
   display: flex;
-  background-color: hsl(0, 0%, 85%);
-  margin-top: 3rem;
+  background-color: rgb(217, 217, 217);
+  margin-top: 4rem;
   width: 100%;
 }
 .banner img {
@@ -154,7 +158,7 @@ ul li:hover {
 }
 .button {
     width: 60%;
-    background-color: hsl(0, 0%, 25%);
+    background-color: rgb(89,89,89);
     color: white;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -163,7 +167,8 @@ ul li:hover {
     margin-bottom: 1rem;
   }
 .button:hover {
-background-color: hsl(238, 96%, 25%);
+background-color: rgb(3, 7, 125);
+font-weight: 800;
 }
 
 @media only screen and (max-width: 525px) {
@@ -213,8 +218,8 @@ background-color: hsl(238, 96%, 25%);
   padding-left: 1rem;
 }
 .info-box .mini-box {
-  border-top: dotted 1px grey;
-  border-bottom: dotted 1px grey;
+  border-top: dotted 1px rgb(89,89,89);
+  border-bottom: dotted 1px rgb(89,89,89);
 }
 .info-box .narrow-box-mobile {
   display: none;
@@ -251,10 +256,11 @@ background-color: hsl(238, 96%, 25%);
     display: flex;
   }
   .mini-box-mobile-text a {
-    color: hsl(209,96%,54%);
+    color: rgb(3, 7, 125);
     text-decoration: none;
   }
 }
+
 
 /*  Courses */
 .course-box {
@@ -338,10 +344,10 @@ background-color: hsl(238, 96%, 25%);
 }
 .thesis-box .wide-box video {
   max-width: 100%;
-  height: auto;
+  height: 20.2rem;
   display: block;
 }
-.thesis-box #fisma {
+.thesis-box .mini-box{
   background-color: hsl(0, 0%, 85%);
   color: hsl(0, 0%, 35%)
 }
