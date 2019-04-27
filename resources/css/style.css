@@ -39,7 +39,7 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  /*margin-right: 1.5rem;*/
 }
 .narrow-box {
   display: flex;
@@ -169,8 +169,6 @@ ul li:hover {
 .banner-text {
   display: flex;
   flex-direction: column;
-  color: hsl(0, 0%, 35%);
-  font-family: "Raleway", "Helvetica", sans-serif;
   max-width: 85%;
   padding-bottom: 1rem;
 }
@@ -178,14 +176,14 @@ ul li:hover {
   padding-bottom: 1rem;
 }
 .button {
-    width: 60%;
-    background-color: rgb(89,89,89);
-    color: white;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    border-radius: 25px;
-    margin-bottom: 1rem;
+  width: 60%;
+  background-color: rgb(89,89,89);
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  border-radius: 25px;
+  margin-bottom: 1rem;
   }
 .button:hover {
 background-color: rgb(3, 7, 125);
@@ -229,7 +227,9 @@ font-weight: 800;
   display: flex;
   width: 100%;
 }
-
+.info-box .quote-box {
+  width: 60%;
+}
 .info-box .wide-box img {
   max-width: 100%;
   height: auto;
@@ -246,6 +246,9 @@ font-weight: 800;
 .info-box .quote span {
   font-weight: 700;
 }
+.info-box .narrow-box-main {
+  width: 40%;
+}
 .info-box .mini-box img {
   padding: 1rem;
 }
@@ -258,8 +261,11 @@ font-weight: 800;
 }
 
 .info-box .mini-box-text p {
-  padding-bottom: 2.5rem;
+  padding-bottom: 1rem;
 }
+/*.info-box .mini-box-text a {
+  margin-bottom: 1rem;
+}*/
 .info-box .mini-box {
   border-top: dotted 1px rgb(89,89,89);
   border-bottom: dotted 1px rgb(89,89,89);
