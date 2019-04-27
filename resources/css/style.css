@@ -12,25 +12,42 @@ body {
     margin: 0 0.25rem;
   }
 }
-h1,
+h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: rgb(64, 64, 64);
+}
+
 h2 {
-  font-weight:800;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(64, 64, 64);
+}
+
+h3 {
+  font-size: 1.25rem;
   color: rgb(64, 64, 64);
 }
 .container {
   display: flex;
   padding: 0.5rem 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .wide-box {
   width: 60%;
   display: flex;
   flex-direction: column;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .narrow-box {
   display: flex;
   flex-direction: column;
   width: 40%;
   padding-left: 1.5rem;
+  margin-right: 1.5rem;
+
 }
 .mini-box {
   display: flex;
@@ -56,6 +73,7 @@ header {
   z-index: 1;
   background-color: white;
   width: 100%;
+  border-bottom: 1px solid black;
 }
 header img{
   padding-right: .2rem;
@@ -156,6 +174,9 @@ ul li:hover {
   max-width: 85%;
   padding-bottom: 1rem;
 }
+.banner-text h1 {
+  padding-bottom: 1rem;
+}
 .button {
     width: 60%;
     background-color: rgb(89,89,89);
@@ -214,8 +235,30 @@ font-weight: 800;
   height: auto;
   display: block;
 }
+
+.info-box .quote h1 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.info-box .quote p {
+  padding-bottom: 1.5rem;
+}
+.info-box .quote span {
+  font-weight: 700;
+}
+.info-box .mini-box img {
+  padding: 1rem;
+}
 .info-box .mini-box-text {
-  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.info-box .mini-box-text h2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.info-box .mini-box-text p {
+  padding-bottom: 2.5rem;
 }
 .info-box .mini-box {
   border-top: dotted 1px rgb(89,89,89);
@@ -271,6 +314,8 @@ font-weight: 800;
 }
 .course-box h1 {
   text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .course-array-main {
   display: inline-flex;
@@ -289,11 +334,19 @@ font-weight: 800;
   width: 300px;
 }
 .course-text {
-  padding-left: 1rem;
   text-align: left;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.course-text h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
 .course-text #course-title {
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .course-text #classes {
   font-weight: 300;
@@ -335,8 +388,19 @@ font-weight: 800;
   display: inline-block;
   color: rgb(105, 105, 105);
 }
-.thesis-box h1{
+.thesis-box h1 {
   text-align: center;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+.thesis-box h2 {
+  text-align: left;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.thesis-box p {
+  padding-bottom: 1.5rem;
 }
 .thesis-inner-box {
   display: flex;
@@ -353,6 +417,14 @@ font-weight: 800;
 }
 .thesis-box img {
   padding: 1rem;
+}
+.thesis-box h3 {
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.thesis-box .mini-box-text p {
+  padding-right: 1rem;
 }
 @media only screen and (max-width: 525px) {
   .thesis-box .wide-box {
