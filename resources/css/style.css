@@ -220,7 +220,8 @@ font-weight: 800;
     width: 50%;
     align-self: center;
     margin: 0.5rem 4rem 1rem 0;
-    background-color: rgb(3, 7, 125);
+    background-color: white;
+    color: rgb(3, 7, 125);
     font-weight: 800;
   }
 }
