@@ -74,7 +74,7 @@ header {
   z-index: 1;
   background-color: white;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid rgb(3, 7, 125);
 }
 header img{
   padding-right: .2rem;
@@ -220,6 +220,8 @@ font-weight: 800;
     width: 50%;
     align-self: center;
     margin: 0.5rem 4rem 1rem 0;
+    background-color: rgb(3, 7, 125);
+    font-weight: 800;
   }
 }
 
@@ -245,6 +247,7 @@ font-weight: 800;
   padding-bottom: 1.5rem;
 }
 .info-box .quote span {
+  color: rgb(3, 7, 125);
   font-weight: 700;
 }
 .info-box .narrow-box-main {
@@ -265,8 +268,8 @@ font-weight: 800;
   padding-bottom: 1rem;
 }
 .info-box .mini-box {
-  border-top: dotted 1px rgb(89,89,89);
-  border-bottom: dotted 1px rgb(89,89,89);
+  border-top: dotted 1.5px rgb(3, 7, 125);
+  border-bottom: dotted 1.5px rgb(3, 7, 125);
 }
 .info-box .narrow-box-mobile {
   display: none;
@@ -299,12 +302,16 @@ font-weight: 800;
   .info-box .narrow-box-mobile .mini-box-mobile {
     margin-bottom: 2rem;
   }
+  .mini-box-mobile h2 {
+    color: rgb(3, 7, 125);
+  }
   .mini-box-mobile-text p {
     display: flex;
     padding-bottom: 0.5rem;
   }
   .mini-box-mobile-text a {
     color: rgb(3, 7, 125);
+    font-weight: 700;
     text-decoration: none;
   }
 }
@@ -346,18 +353,19 @@ font-weight: 800;
   margin-bottom: 1rem;
 }
 .course-text h3 {
+  color: rgb(3, 7, 125);
   font-weight: 700;
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 .course-text #course-title {
-  color: rgb(3, 7, 125);
   font-weight: 700;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 .course-text #classes {
-  font-weight: 300;
+  color: rgb(3, 7, 125);
+  font-weight: 400;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -382,6 +390,7 @@ font-weight: 800;
     margin-bottom: 1rem;
   }
   .course-array-mobile h2 {
+    color: rgb(3, 7, 125);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -448,10 +457,14 @@ font-weight: 800;
   .thesis-box h1 {
     text-align: center;
     font-weight: 700;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
   }
   .thesis-box .wide-box {
     width: 100%;
+    margin: 0 1rem 1rem 1rem;
+  }
+  .thesis-box .wide-box video {
+    height: auto;
   }
   .thesis-box .wide-box h2, p {
     display: none;
