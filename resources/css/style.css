@@ -153,7 +153,7 @@ ul li:hover {
 /* Banner */
 .banner {
   display: flex;
-  background-color: rgb(217, 217, 217);
+  background-color: rgb(3, 7, 125);
   margin-top: 4rem;
   width: 100%;
 }
@@ -174,14 +174,15 @@ ul li:hover {
   max-width: 85%;
   padding-bottom: 1rem;
 }
-.banner-text h1 {
-  color: rgb(3, 7, 125);
+.banner-text h1,
+.banner-text h3 {
+  color: white;
   padding-bottom: 1rem;
 }
 .button {
   width: 60%;
-  background-color: rgb(89,89,89);
-  color: white;
+  background-color: white;
+  color: rgb(3, 7, 125);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
@@ -189,7 +190,6 @@ ul li:hover {
   margin-bottom: 1rem;
   }
 .button:hover {
-background-color: rgb(3, 7, 125);
 font-weight: 800;
 }
 
@@ -430,6 +430,7 @@ font-weight: 800;
 }
 .thesis-box .wide-box {
   background-color: rgb(217, 217, 217);
+  border: 2px solid rgb(3, 7, 125);
 }
 .thesis-box .wide-box video {
   max-width: 100%;
@@ -439,6 +440,7 @@ font-weight: 800;
 }
 .thesis-box .mini-box{
   background-color: rgb(217, 217, 217);
+  border: 2px solid rgb(3, 7, 125);
 }
 .thesis-box img {
   padding: 1rem;
